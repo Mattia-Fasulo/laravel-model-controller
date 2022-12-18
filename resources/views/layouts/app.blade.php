@@ -19,9 +19,11 @@
 
     @include('partials.header')
 
-    <main>@yield('content')</main>
+    <div id="main">
+        @yield('content')
+    </div>
 
-    {{-- @include('partials.footer') --}}
+    @include('partials.footer')
 
 </body>
 

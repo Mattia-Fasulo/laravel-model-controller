@@ -25,8 +25,6 @@
                                                     alt="star">
                                             @endif
                                         @endfor
-
-
                                     </div>
                                     {{--
                                     <div class="col-xs-4">
