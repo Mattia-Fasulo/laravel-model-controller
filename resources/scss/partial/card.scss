@@ -5,16 +5,14 @@
 }
 
 .profile-card-6 {
-    height: 520px;
     max-width: 350px;
-    background-color: #FFF;
+    background-color: #fff;
     border-radius: 5px;
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     position: relative;
     margin: 10px auto;
     cursor: pointer;
-
 }
 
 .profile-card-6 img {
@@ -30,7 +28,7 @@
     left: 10px;
     font-size: 25px;
     font-weight: bold;
-    color: #FFF;
+    color: #fff;
     padding: 15px 20px;
     background: rgba(0, 0, 0, 0.149);
     border-radius: 10px;
@@ -51,13 +49,17 @@
     left: 0px;
     right: 0px;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 50%, rgba(255, 255, 0, 0));
-    color: #FFF;
+    color: #fff;
     padding: 50px 0px 20px 0px;
     transition: all 0.15s linear;
 }
 
-.profile-card-6 .profile-overview h3 {
-    font-weight: bold;
+.profile-card-6 .profile-overview {
+
+    img {
+        display: none;
+        width: 10%;
+    }
 }
 
 .profile-card-6 .profile-overview p {
@@ -66,6 +68,13 @@
 
 .profile-card-6:hover img {
     filter: brightness(40%);
+}
+
+.profile-card-6:hover .profile-overview {
+    img {
+        display: inline;
+        filter: brightness(100%);
+    }
 }
 
 .profile-card-6:hover .profile-name {
