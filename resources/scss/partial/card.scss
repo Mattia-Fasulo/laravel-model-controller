@@ -55,10 +55,18 @@
 }
 
 .profile-card-6 .profile-overview {
-
+    h3 {
+        display: none;
+    }
     img {
         display: none;
         width: 10%;
+    }
+
+    .flag {
+        img {
+            width: 100px;
+        }
     }
 }
 
@@ -71,6 +79,9 @@
 }
 
 .profile-card-6:hover .profile-overview {
+    h3 {
+        display: inline;
+    }
     img {
         display: inline;
         filter: brightness(100%);
