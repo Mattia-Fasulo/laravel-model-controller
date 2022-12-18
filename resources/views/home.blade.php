@@ -15,26 +15,31 @@
                         <div class="profile-overview">
                             <div class="profile-overview">
                                 <div class="row text-center">
+                                    <div class="col-xs-4 my-3">
+                                        <h3>{{ $movie['original_title'] }}</h3>
+                                    </div>
+                                    <div class="flag col-xs-4 mb-3">
+                                        @if ($movie['nationality'] == 'american')
+                                            <img src="{{ Vite::asset('resources/img/flag-us.svg') }}" alt="flag">
+                                        @elseif($movie['nationality'] == 'american/british')
+                                            <img src="{{ Vite::asset('resources/img/flag-uk.svg') }}" alt="flag">
+                                        @endif
+
+                                    </div>
                                     <div class="col-xs-4">
                                         @for ($i = 0; $i < 5; $i++)
                                             @if ($i < ceil($movie['vote']) / 2)
-                                                <img src="{{ Vite::asset('resources/img/star-solid.svg') }}"
-                                                    alt="star">
+                                                <img src="{{ Vite::asset('resources/img/star-solid.svg') }}" alt="star">
                                             @else
                                                 <img src="{{ Vite::asset('resources/img/star-regular.svg') }}"
                                                     alt="star">
                                             @endif
                                         @endfor
                                     </div>
-                                    {{--
-                                    <div class="col-xs-4">
-                                        <h3>50</h3>
-                                        <p>Matches</p>
-                                    </div>
-                                    <div class="col-xs-4">
-                                        <h3>35</h3>
-                                        <p>Goals</p>
-                                    </div> --}}
+
+
+
+
                                 </div>
                             </div>
                         </div>
